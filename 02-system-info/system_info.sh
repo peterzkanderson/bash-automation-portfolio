@@ -28,6 +28,13 @@ echo "${line}"
 
 # DISK SUMMARY-------------------------------------------------------------------------
 
+#disk_total="$(df -h | awk '$6 == "/" {print $2}')"
+#disk_used="$(df -h | awk '$6 == "/" {print $3}')"
+#disk_avail="$(df -h | awk '$6 == "/" {print $4}')"
+#disk_perc="$(df -h | awk '$6 == "/" {print $5}')"
+#mem_avail="$(free -h | grep 'Mem:' | awk '{print $7}')"
+
+# Optimized implementation (single read subprocess stream):
 read -r disk_total disk_used disk_avail disk_perc < <(df -h | awk '$6 == "/" {print $2, $3, $4, $5}')
 mem_avail="$(free -h | grep 'Mem:' | awk '{print $7}')"
 
