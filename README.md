@@ -4,8 +4,9 @@ A collection of modular Bash scripts demonstrating Linux system administration, 
 
 ## Repository Structure
 
-* **`01-fundamentals/`** — *(In progress)* Core Bash syntax, read-only variable declarations, and `tput` terminal styling.
-* **`02-system-info/system_info.sh`** — A CLI system health and diagnostics dashboard that aggregates OS uptime, top CPU-consuming processes, root filesystem and memory utilization, NGINX daemon status, and external network packet loss.
+* **`01-fundamentals/`** — Core Bash syntax, read-only variable declarations, and `tput` terminal styling.
+* **`02-system-info/system_info.sh`** — A CLI system health and diagnostics dashboard that aggregates OS uptime, top CPU-consuming processes, 
+root filesystem and memory utilization, NGINX daemon status, and external network packet loss.
 
 ## Featured Tool: `system_info.sh`
 
@@ -19,6 +20,12 @@ A collection of modular Bash scripts demonstrating Linux system administration, 
 ## Usage
 
 Clone the repository and execute the diagnostic script directly:
+
+./01-fundamentals/greetings_script.sh
+./02-system-info/system_info.sh
+
+
+
 
 ```bash
 git clone git@github.com:peterzkanderson/bash-automation-portfolio.git
