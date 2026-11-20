@@ -15,3 +15,4 @@ temperatureF="$(echo "scale=2; ${temperature} * (9 / 5) + 32" | bc)"
 echo "In ${city}, the current temperature is: ${temperature}°C"
 echo "In ${city}, the current temperature is: ${temperatureF}°F"
 
+
